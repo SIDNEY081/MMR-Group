@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -124,10 +124,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']  # This is for development
-STATIC_ROOT = BASE_DIR / 'staticfiles'    # This is for production
+STATICFILES_DIRS = [BASE_DIR / 'static']  # 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Media files (if you plan to upload images)
+# Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
