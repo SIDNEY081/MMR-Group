@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}RenMos Aluminium & Glass - Fabrication & Installation{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="py-5 bg-secondary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">RenMos Aluminium & Glass</h1>
+                <p class="lead">Framing your world with clarity and strength</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hero Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Precision Engineering in Aluminium & Glass</h2>
+                <p class="lead">We specialize in the fabrication and installation of premium aluminium and glass systems that combine aesthetic appeal with structural integrity.</p>
+                <p>From sleek residential windows to robust commercial storefronts, RenMos delivers solutions that enhance light, space, and security while maintaining the highest standards of craftsmanship.</p>
+                
+                <div class="mt-4">
+                    <a href="{% url 'contact' %}" class="btn btn-secondary btn-lg me-3">Get Quote</a>
+                    <a href="#services" class="btn btn-outline-secondary btn-lg">Our Services</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body p-4">
+                        <h4 class="card-title">The RenMos Advantage</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Precision Fabrication:</strong> Custom solutions to exact specifications</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Quality Materials:</strong> Premium aluminium and glass products</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Expert Installation:</strong> Professional fitting by skilled technicians</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Energy Efficient:</strong> Solutions that improve thermal performance</li>
+                            <li><i class="fas fa-check text-success me-2"></i> <strong>Durability:</strong> Products built to withstand environmental challenges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2>Our Aluminium & Glass Services</h2>
+                <p class="lead">Comprehensive solutions for residential and commercial applications</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-window-restore fa-3x text-secondary mb-3"></i>
+                        <h4>Aluminium Windows</h4>
+                        <p>Custom-designed aluminium windows that combine style, durability, and energy efficiency for any building type.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Sliding windows</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Casement windows</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Awning windows</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Tilt-turn systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-door-open fa-3x text-secondary mb-3"></i>
+                        <h4>Aluminium Doors</h4>
+                        <p>Stylish and secure aluminium door systems for entrances, patios, and interior spaces with smooth operation.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Sliding doors</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Folding doors</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Entrance doors</li>
+                            <li><i class="fas fa-check text-success me-2"></i> French doors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-store fa-3x text-secondary mb-3"></i>
+                        <h4>Shop Fronts & Partitions</h4>
+                        <p>Professional commercial storefronts and interior glass partitions that enhance business visibility and space.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Commercial shop fronts</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Office partitions</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Glass walls</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Display windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Row of Services -->
+        <div class="row g-4 mt-2">
+            <!-- Service 4 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-building fa-3x text-secondary mb-3"></i>
+                        <h4>Structural Glazing</h4>
+                        <p>Advanced structural glazing systems that create seamless glass facades for modern architectural designs.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Curtain walls</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Spider glazing</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Structural silicone</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Point fixed glazing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-shield-alt fa-3x text-secondary mb-3"></i>
+                        <h4>Balustrades & Railings</h4>
+                        <p>Safety and style combined in our aluminium and glass balustrade systems for stairs, balconies, and terraces.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Glass balustrades</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Aluminium railings</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Staircase systems</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Barrier systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-tools fa-3x text-secondary mb-3"></i>
+                        <h4>Custom Fabrication</h4>
+                        <p>Bespoke aluminium and glass solutions tailored to your specific requirements and architectural vision.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Custom designs</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Special finishes</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Unique configurations</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Architectural elements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Applications Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2>Applications & Industries</h2>
+                <p class="lead">Serving diverse sectors with specialized aluminium and glass solutions</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-home fa-3x text-secondary mb-3"></i>
+                        <h4>Residential</h4>
+                        <p>Enhancing homes with beautiful, functional aluminium and glass installations that improve living spaces and property value.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Windows & doors</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Balcony railings</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Shower enclosures</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Room partitions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-building fa-3x text-secondary mb-3"></i>
+                        <h4>Commercial</h4>
+                        <p>Professional installations for businesses, offices, and retail spaces that combine aesthetics with functionality and security.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Store fronts</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Office partitions</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Entrance systems</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Display cases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Transform Your Space with RenMos</h2>
+                <p class="lead mb-4">Let us help you create beautiful, functional spaces with our premium aluminium and glass solutions.</p>
+                <a href="{% url 'contact' %}" class="btn btn-secondary btn-lg me-3">Request Consultation</a>
+                <a href="tel:+27XXXXXXXXX" class="btn btn-outline-light btn-lg">Call Us Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

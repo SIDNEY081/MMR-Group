@@ -20,6 +20,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']  # This should point to your static directory

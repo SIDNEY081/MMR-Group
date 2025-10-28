@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Mpenyana Tech Solutions - Digital Transformation{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">Mpenyana Tech Solutions</h1>
+                <p class="lead">Your strategic partner in digital transformation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-5">Custom Software Development & IT Solutions</h2>
+                <p class="lead">We engineer scalable, robust software solutions that power businesses and drive innovation forward.</p>
+                
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-code text-primary me-2"></i> Our Services</h4>
+                        <ul>
+                            <li>Custom Software Development</li>
+                            <li>Web & Mobile Applications</li>
+                            <li>IT Infrastructure & Cloud Solutions</li>
+                            <li>Digital Transformation Consulting</li>
+                            <li>System Integration</li>
+                            <li>Technical Support & Maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="fas fa-rocket text-primary me-2"></i> Why Choose Us</h4>
+                        <ul>
+                            <li>Proven track record in diverse industries</li>
+                            <li>Scalable solutions that grow with your business</li>
+                            <li>Focus on user experience and performance</li>
+                            <li>Ongoing support and maintenance</li>
+                            <li>Competitive pricing models</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

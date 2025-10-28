@@ -102,3 +102,43 @@ html {
         margin-top: -66px;
     }
 }
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Steps */
+.process-step {
+    padding: 20px;
+}
+
+.step-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Venture-specific styles */
+.construction-bg {
+    background-color: #f59e0b;
+}
+
+.aluminium-bg {
+    background-color: #6b7280;
+}
+
+/* Service list styling */
+.service-card ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.service-card ul li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand nav-brand" href="{% url 'home' %}">
+            <strong>MMR Group</strong>
+            <small class="d-block d-md-inline md-0" style="font-size: 0.7rem; opacity: 0.8;">Mpenyana-Marklarn-RenMos</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'ventures' %}">Ventures</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

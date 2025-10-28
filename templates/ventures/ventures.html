@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Ventures - MMR Group Business Divisions{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">Our Ventures</h1>
+                <p class="lead">Specialized companies united under one vision</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ventures Introduction -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Integrated Excellence Across Industries</h2>
+                <p class="lead">MMR Group brings together three specialized ventures, each a leader in its field, to deliver comprehensive solutions that span the digital and physical worlds.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- All Ventures -->
+<section class="py-5 bg-light">
+    <div class="container">
+        {% include 'includes/venture-cards.html' %}
+    </div>
+</section>
+
+<!-- Venture Details -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-laptop-code fa-2x text-primary mb-3"></i>
+                    <h4>Mpenyana Tech Solutions</h4>
+                    <p>Digital transformation partners specializing in custom software, web applications, and IT infrastructure.</p>
+                    <a href="{% url 'tech' %}" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-building fa-2x text-warning mb-3"></i>
+                    <h4>Marklarn Built Environment</h4>
+                    <p>Construction experts delivering complete building solutions from foundation to finishing touches.</p>
+                    <a href="{% url 'construction' %}" class="btn btn-outline-warning">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-industry fa-2x text-secondary mb-3"></i>
+                    <h4>RenMos Aluminium & Glass</h4>
+                    <p>Specialists in premium aluminium and glass fabrication for modern residential and commercial spaces.</p>
+                    <a href="{% url 'aluminium' %}" class="btn btn-outline-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Unified Approach -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">The MMR Advantage</h2>
+                <p class="lead mb-4">By choosing MMR Group, you get the expertise of three specialized companies with the convenience of single-point coordination and unified quality standards.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg">Start Your Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Portfolio - Our Construction Projects{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">Portfolio</h1>
+                <p class="lead">Marklarn Built Environment Projects</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Portfolio Coming Soon</h2>
+                <p class="lead">We're currently compiling our project gallery to showcase Marklarn's quality workmanship.</p>
+                <p>Check back soon to see our construction projects, or <a href="{% url 'contact' %}">contact us</a> to discuss your project.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

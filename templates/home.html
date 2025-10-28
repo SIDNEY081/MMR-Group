@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}MMR Group - Building Your Future, in Code and Concrete{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-3">MMR Group</h1>
+                <h3 class="h5 mb-3 text-light" style="opacity: 0.9;">Mpenyana-Marklarn-RenMos Group (Pty) Ltd</h3>
+                <h2 class="h3 mb-4">Building Your Future, in Code and Concrete</h2>
+                <p class="lead mb-4">A unified consortium of ventures mastering the digital and the physical.</p>
+                <a href="{% url 'ventures' %}" class="btn btn-light btn-lg me-3">Explore Ventures</a>
+                <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <h2 class="mb-4">Our Mission</h2>
+                <p class="lead mb-3">To empower progress and shape landscapes through cutting-edge digital solutions and quality construction.</p>
+                <a href="{% url 'about' %}" class="btn btn-primary btn-lg mt-3">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ventures Preview -->
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2>Our Ventures</h2>
+                <p class="lead">Specialized companies united under <strong>MMR Group</strong></p>
+            </div>
+        </div>
+        {% include 'includes/venture-cards.html' %}
+        <div class="text-center mt-4">
+            <a href="{% url 'ventures' %}" class="btn btn-outline-primary btn-lg">View All Ventures</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

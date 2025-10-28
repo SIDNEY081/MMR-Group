@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Marklarn Built Environment - Construction & Building Services{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="py-5 bg-warning text-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">Marklarn Built Environment</h1>
+                <p class="lead">Transforming structures into exceptional spaces</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hero Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Masterful Craftsmanship in Every Project</h2>
+                <p class="lead">With meticulous attention to detail and unwavering commitment to quality, we deliver complete building and finishing solutions that stand the test of time.</p>
+                <p>From foundational work to the final aesthetic touches, Marklarn Built Environment brings your architectural vision to life with precision and professionalism.</p>
+                
+                <div class="mt-4">
+                    <a href="{% url 'portfolio' %}" class="btn btn-warning btn-lg me-3">View Our Work</a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-warning btn-lg">Get Free Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body p-4">
+                        <h4 class="card-title">Why Choose Marklarn?</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Experienced Team:</strong> Decades of combined construction expertise</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Quality Materials:</strong> We use only the best materials and suppliers</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Timely Delivery:</strong> Projects completed on schedule</li>
+                            <li class="mb-3"><i class="fas fa-check text-success me-2"></i> <strong>Transparent Pricing:</strong> No hidden costs or surprises</li>
+                            <li><i class="fas fa-check text-success me-2"></i> <strong>Comprehensive Service:</strong> From planning to final finishing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2>Our Construction Services</h2>
+                <p class="lead">Comprehensive building solutions for residential and commercial projects</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-home fa-3x text-warning mb-3"></i>
+                        <h4>Building Construction</h4>
+                        <p>Complete construction services from foundation to roof, including structural work and project management.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> New building construction</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Structural work</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Project management</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Quality assurance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-trowel fa-3x text-warning mb-3"></i>
+                        <h4>Plastering & Finishing</h4>
+                        <p>Professional plastering services for smooth, durable wall finishes that provide the perfect canvas for your space.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Internal plastering</li>
+                            <li><i class="fas fa-check text-success me-2"></i> External plastering</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Smooth finishing</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Texture applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-bolt fa-3x text-warning mb-3"></i>
+                        <h4>Electrical Wiring</h4>
+                        <p>Safe, reliable electrical installations and wiring systems for residential and commercial properties.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Electrical installations</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Wiring systems</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Safety compliance</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Maintenance & repairs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Row of Services -->
+        <div class="row g-4 mt-2">
+            <!-- Service 4 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-layer-group fa-3x text-warning mb-3"></i>
+                        <h4>Roofing Solutions</h4>
+                        <p>Durable, weather-proof roofing installations and repairs using quality materials and proven techniques.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Roof installation</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Roof repairs</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Waterproofing</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-border-style fa-3x text-warning mb-3"></i>
+                        <h4>Floor & Wall Tiling</h4>
+                        <p>Precision tiling services for floors and walls, ensuring perfect alignment and long-lasting results.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Floor tiling</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Wall tiling</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Pattern design</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Grouting & sealing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="col-md-4">
+                <div class="card service-card h-100 border-0">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-paint-roller fa-3x text-warning mb-3"></i>
+                        <h4>Painting & Decorating</h4>
+                        <p>Professional painting services that transform spaces with quality finishes and attention to detail.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Interior painting</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Exterior painting</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Surface preparation</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Decorative finishes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2>Our Construction Process</h2>
+                <p class="lead">A systematic approach to delivering quality results</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="process-step">
+                            <div class="step-number bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <strong>1</strong>
+                            </div>
+                            <h5>Consultation & Planning</h5>
+                            <p>We discuss your vision, assess requirements, and create a detailed project plan.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-step">
+                            <div class="step-number bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <strong>2</strong>
+                            </div>
+                            <h5>Design & Quotation</h5>
+                            <p>We provide detailed designs and transparent pricing with no hidden costs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-step">
+                            <div class="step-number bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <strong>3</strong>
+                            </div>
+                            <h5>Construction & Execution</h5>
+                            <p>Our skilled team executes the project with precision and quality craftsmanship.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-step">
+                            <div class="step-number bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <strong>4</strong>
+                            </div>
+                            <h5>Quality Assurance & Handover</h5>
+                            <p>We conduct thorough inspections and deliver your completed project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Ready to Start Your Construction Project?</h2>
+                <p class="lead mb-4">Let Marklarn Built Environment bring your vision to life with quality craftsmanship and professional service.</p>
+                <a href="{% url 'contact' %}" class="btn btn-warning btn-lg me-3">Get Free Quote</a>
+                <a href="{% url 'portfolio' %}" class="btn btn-outline-light btn-lg">View Our Portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Add any construction-specific JavaScript here
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for internal links
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
