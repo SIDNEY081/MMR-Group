@@ -1,29 +1,170 @@
+
 {% extends 'base.html' %}
 {% load static %}
-
-{% block title %}Portfolio - Our Construction Projects{% endblock %}
-
+{% block title %} MMR Group Portfolio{% endblock %}
 {% block content %}
-<section class="py-5 bg-primary text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="display-4">Portfolio</h1>
-                <p class="lead">Marklarn Built Environment Projects</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h2>Portfolio Coming Soon</h2>
-                <p class="lead">We're currently compiling our project gallery to showcase Marklarn's quality workmanship.</p>
-                <p>Check back soon to see our construction projects, or <a href="{% url 'contact' %}">contact us</a> to discuss your project.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMR Group | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0d6efd, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .portfolio-section {
+            padding: 60px 0;
+        }
+
+        .portfolio-section h2 {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-img {
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1 class="display-5 fw-bold">Our Portfolio</h1>
+            <p class="lead">Innovative Solutions • Construction Excellence • Creative Design</p>
+        </div>
+    </header>
+
+    <!-- PORTFOLIO OVERVIEW -->
+    <section class="portfolio-section">
+        <div class="container text-center mb-5">
+            <h2>Explore Our Work</h2>
+            <p class="text-muted">At MMR Group, we combine technology, engineering, and craftsmanship to deliver world-class solutions in IT, construction, and aluminium design. Here are some of our featured projects across our ventures.</p>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+                <!-- TECH PROJECT -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'images/tech1.jpg' %}" class="card-img-top" alt="IT project">
+                        <div class="card-body">
+                            <h5 class="card-title">Mpenyana Tech Solutions</h5>
+                            <p class="card-text text-muted">Custom web applications, software systems, and IT infrastructure solutions that drive business transformation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONSTRUCTION PROJECT -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'images/construction1.jpg' %}" class="card-img-top" alt="Building site">
+                        <div class="card-body">
+                            <h5 class="card-title">Marklarn Built Environment</h5>
+                            <p class="card-text text-muted">Premium construction and renovation services delivering precision, reliability, and modern designs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ALUMINIUM PROJECT -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="{% static 'images/glass1.jpg' %}" class="card-img-top" alt="Aluminium frame">
+                        <div class="card-body">
+                            <h5 class="card-title">RenMos Aluminium & Glass</h5>
+                            <p class="card-text text-muted">Specialists in aluminium framing, glass installations, and custom designs for residential and commercial projects.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="portfolio-section bg-light">
+        <div class="container text-center mb-5">
+            <h2>Gallery</h2>
+            <p class="text-muted">A showcase of our latest projects and behind-the-scenes moments.</p>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+                <!-- Multiple Gallery Images -->
+                <div class="col-md-4">
+                    <img src="{% static 'images/tech2.jpg' %}" class="img-fluid gallery-img" alt="View Image">
+                </div>
+                <div class="col-md-4">
+                    <h3>House Building</h3>
+                    <img src="{% static 'images/construction2.jpg' %}" class="img-fluid gallery-img" alt="View Image">
+                </div>
+                <div class="col-md-4">
+                    <h3> 5 Panel Folding Door</h3>
+                    <img src="{% static 'images/glass2.jpg' %}" class="img-fluid gallery-img" alt="View Image">
+                </div>
+                <div class="col-md-4">
+
+                    <img src="{% static 'images/.jpg' %}" class="img-fluid gallery-img" alt="View Image">
+                </div>
+                <div class="col-md-4">
+                    <h3> Stop Nonsesnse Wall</h3>
+                    <img src="{% static 'images/construction3.jpg' %}" class="img-fluid gallery-img" alt="View Image">
+                </div>
+                <div class="col-md-4">
+                    <h3> Double Door STD</h3>
+                    <img src="{% static 'images/glass3.jpg' %}" class="img-fluid gallery-img" alt="View Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 MMR Group (Pty) Ltd — Building Your Future in Code and Concrete</p>
+    </footer>
+
+    <!-- Optional JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
 {% endblock %}

@@ -27,3 +27,7 @@ def portfolio(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+
+
