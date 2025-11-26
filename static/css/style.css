@@ -142,3 +142,58 @@ html {
 .service-card ul li:last-child {
     border-bottom: none;
 }
+/* CARD STYLING */
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CARD HEADER COLORS */
+.tech-card { border-top: 4px solid #1a365d; }
+.construction-card { border-top: 4px solid #f97316; }
+.aluminium-card { border-top: 4px solid #6b7280; }
+
+/* ICON STYLING */
+.card-body i {
+    transition: transform 0.3s ease;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+}
+
+.card-body i:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* BUTTON STYLING */
+.contact-btn {
+    transition: transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+}
+
+/* FORM STYLING */
+.card-body .collapse .form-control {
+    margin-bottom: 0.5rem;
+}
+
+.card-body .collapse .btn {
+    width: 100%;
+}
+
+.card-body .collapse .bg-light {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* HEAD OFFICE CARD */
+.bg-light.shadow-sm {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

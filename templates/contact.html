@@ -2,65 +2,115 @@
 {% load static %}
 
 {% block title %}Contact MMR Group - Get In Touch{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
 
 {% block content %}
-<section class="py-5 bg-primary text-white">
+<section class="py-5 bg-primary text-white text-center">
     <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h1 class="display-4">Contact Us</h1>
-                <p class="lead">Get in touch with the right team for your project</p>
-            </div>
-        </div>
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">Get in touch with the right team for your project</p>
     </div>
 </section>
 
 <section class="py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="row g-4">
-                    <div class="col-md-4 text-center">
-                        <div class="card h-100 border-0">
-                            <div class="card-body">
-                                <i class="fas fa-laptop-code fa-2x text-primary mb-3"></i>
-                                <h5>Tech Solutions</h5>
-                                <p class="text-muted">tech@mmrgroup.co.za</p>
-                                <small>Software development & IT services</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 text-center">
-                        <div class="card h-100 border-0">
-                            <div class="card-body">
-                                <i class="fas fa-building fa-2x text-warning mb-3"></i>
-                                <h5>Built Environment</h5>
-                                <p class="text-muted">construction@mmrgroup.co.za</p>
-                                <small>Construction & building services</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 text-center">
-                        <div class="card h-100 border-0">
-                            <div class="card-body">
-                                <i class="fas fa-industry fa-2x text-secondary mb-3"></i>
-                                <h5>Aluminium & Glass</h5>
-                                <p class="text-muted">aluminium@mmrgroup.co.za</p>
-                                <small>Fabrication & installation</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row g-4 text-center">
 
-                <div class="mt-5 p-4 bg-light rounded text-center">
-                    <h4>MMR Group Head Office</h4>
-                    <p class="mb-1">Mpenyana-Marklarn-RenMos Group (Pty) Ltd</p>
-                    <p class="mb-1">Email: info@mmrgroup.co.za</p>
-                    <p class="mb-0">Phone: +27 XX XXX XXXX</p>
+            <!-- TECH SOLUTIONS -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm tech-card">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-code bg-primary"></i>
+                        <h5 class="text-primary">Tech Solutions</h5>
+                        <p class="text-muted">tech@mmrgroup.co.za</p>
+                        <small>Software development & IT services</small>
+
+                        <!-- BUTTON & FORM INSIDE CARD -->
+                        <button class="btn btn-primary mt-3 w-100 contact-btn" 
+                                type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#techForm">
+                            Contact Tech
+                        </button>
+                        <div class="collapse mt-2" id="techForm">
+                            <div class="bg-light p-3 rounded shadow-sm">
+                                <form>
+                                    <input type="text" class="form-control mb-2" placeholder="Your Name">
+                                    <input type="email" class="form-control mb-2" placeholder="Your Email">
+                                    <textarea class="form-control mb-2" placeholder="Message" rows="3"></textarea>
+                                    <button type="submit" class="btn btn-primary w-100">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- CONSTRUCTION -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm construction-card">
+                    <div class="card-body">
+                        <i class="fas fa-building bg-warning"></i>
+                        <h5 class="text-warning">Built Environment</h5>
+                        <p class="text-muted">construction@mmrgroup.co.za</p>
+                        <small>Construction & building services</small>
+
+                        <button class="btn btn-warning mt-3 w-100 contact-btn" 
+                                type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#constructionForm">
+                            Contact Construction
+                        </button>
+                        <div class="collapse mt-2" id="constructionForm">
+                            <div class="bg-light p-3 rounded shadow-sm">
+                                <form>
+                                    <input type="text" class="form-control mb-2" placeholder="Your Name">
+                                    <input type="email" class="form-control mb-2" placeholder="Your Email">
+                                    <textarea class="form-control mb-2" placeholder="Message" rows="3"></textarea>
+                                    <button type="submit" class="btn btn-warning w-100">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ALUMINIUM & GLASS -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm aluminium-card">
+                    <div class="card-body">
+                        <i class="fas fa-industry bg-secondary"></i>
+                        <h5 class="text-secondary">Aluminium & Glass</h5>
+                        <p class="text-muted">aluminium@mmrgroup.co.za</p>
+                        <small>Fabrication & installation</small>
+
+                        <button class="btn btn-secondary mt-3 w-100 contact-btn" 
+                                type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#aluminiumForm">
+                            Contact Aluminium
+                        </button>
+                        <div class="collapse mt-2" id="aluminiumForm">
+                            <div class="bg-light p-3 rounded shadow-sm">
+                                <form>
+                                    <input type="text" class="form-control mb-2" placeholder="Your Name">
+                                    <input type="email" class="form-control mb-2" placeholder="Your Email">
+                                    <textarea class="form-control mb-2" placeholder="Message" rows="3"></textarea>
+                                    <button type="submit" class="btn btn-secondary w-100">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Head Office Info -->
+        <div class="mt-5 p-4 bg-light rounded text-center shadow-sm">
+            <h4>MMR Group Head Office</h4>
+            <p class="mb-1">Mpenyana-Marklarn-RenMos Group (Pty) Ltd</p>
+            <p class="mb-1">Email: info@mmrgroup.co.za</p>
+            <p class="mb-0">Phone: +27 XX XXX XXXX</p>
         </div>
     </div>
 </section>
